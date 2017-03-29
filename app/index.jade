@@ -1,0 +1,106 @@
+doctype html
+html
+    head
+        title Test work
+        link(type='text/css' href='../dist/css/style.min.css' rel='stylesheet')
+        link(type='text/css' href='../dist/css/jquery.bxslider.css' rel='stylesheet')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(charset="utf-8")
+    body
+        div.form-block
+            form#feedback.form-block__main-form
+                h2.form-block__main-form--title FeedBack
+                i.form-block__main-form--close
+                label(for='name') Name <span>*</span>
+                input(type='text' name='name' id='name' title='Только английские буквы' required minlength='4' pattern='^[a-zA-Z]+$')
+                label(for='phone') Phone <span>*</span>
+                input(type='tel' name='phone' id='phone' minlength='10' class='phone' required title='Только цифры. Минимум 10 цифр')
+                label(for='email') Email <span>*</span>
+                input(type='email' name='email' id='email' required)
+                label(for='text') Text
+                textarea(type='email' name='text' id='text')
+                input(type='submit' value='Submit' id='submit')
+        header.header
+            div.header__wrap
+                img(src='../dist/img/header-logo.png' alt='Logo')
+                div.header__contact
+                    div.header__phone-wrap
+                        span.header__phone-wrap--item +3 (050) 777 77 77
+                        span.header__phone-wrap--item +3 (050) 777 77 77
+                    div.header__wrap-btn
+                        button.header__wrap-btn--item Feedback
+        ul.menu
+            li.menu__item
+                a.menu__item--link Home
+            li.menu__item
+                a.menu__item--link Catalog
+            li.menu__item
+                a.menu__item--link Shipping and payment
+            li.menu__item
+                a.menu__item--link Price
+            li.menu__item
+                a.menu__item--link Contacts
+        section.slider
+            ul.bxslider.slider__wrap
+                li.slider__wrap--item
+                li.slider__wrap--item
+                li.slider__wrap--item
+        section.goods
+            ul.goods__bread-crums
+                li.goods__bread-crums--item Home
+                li.goods__bread-crums--item Catalog
+                li.goods__bread-crums--item Category Name
+            ul.goods__left
+                li.goods__left--item Cars
+                li.goods__left--item.active Household Appliances
+                    ul.goods__left-list
+                        li.goods__left-list--item.active Microwaves
+                        li.goods__left-list--item Fridges
+                        li.goods__left-list--item Посудомоечные машины
+                        li.goods__left-list--item Dishwashers
+                li.goods__left--item Mobile Equipment
+                li.goods__left--item Computers
+                li.goods__left--item Clothing
+                li.goods__left--item Real Estate
+            div.goods__center
+                script#template
+                    span {{#each updates}}
+                    div.goods__center--item
+                        div.goods__center--item-img
+                        p.goods__center--item-text {{text}}
+                        div.goods__center--item-price
+                            span.goods__center--item-price-digit {{price}}
+                            span.goods__center--item-price-img
+                    span {{/each}}
+                    ul.goods__center-nav
+                        li.goods__center-nav--item 1
+                        li.goods__center-nav--item 2
+                        li.goods__center-nav--item.active 3
+                        li.goods__center-nav--item 4
+                        li.goods__center-nav--item 5
+                        li.goods__center-nav--item 6
+                        li.goods__center-nav--item 7
+                    div.goods__center-text
+                        p.goods__center-text--item Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        p.goods__center-text--item Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        footer.footer
+            div.footer__wrap
+                div.footer__coop
+                    p.footer__coop--item &copy; Knubisoft 2012-2013
+                    p.footer__coop--item All Rights Reserved
+                ul.footer__menu
+                    li.footer__menu-item
+                        a.footer__menu-item--link Home
+                    li.footer__menu-item
+                        a.footer__menu-item--link Catalog
+                    li.footer__menu-item
+                        a.footer__menu-item--link Shipping and payment
+                    li.footer__menu-item
+                        a.footer__menu-item--link Price
+                    li.footer__menu-item
+                        a.footer__menu-item--link Contacts
+
+        script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+        script(src='../dist/js/jquery.bxslider.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js')
+        script(src='../dist/js/script.js')
