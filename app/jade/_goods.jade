@@ -1,0 +1,38 @@
+section.goods
+    ul.goods__bread-crums
+        li.goods__bread-crums--item Home
+        li.goods__bread-crums--item Catalog
+        li.goods__bread-crums--item Category Name
+    ul.goods__left
+        li.goods__left--item Cars
+        li.goods__left--item.active Household Appliances
+            ul.goods__left-list
+                li.goods__left-list--item.active Microwaves
+                li.goods__left-list--item Fridges
+                li.goods__left-list--item Посудомоечные машины
+                li.goods__left-list--item Dishwashers
+        li.goods__left--item Mobile Equipment
+        li.goods__left--item Computers
+        li.goods__left--item Clothing
+        li.goods__left--item Real Estate
+    div.goods__center
+        script#template
+            span {{#each updates}}
+            div.goods__center--item
+                div.goods__center--item-img
+                p.goods__center--item-text {{text}}
+                div.goods__center--item-price
+                    span.goods__center--item-price-digit {{price}}
+                    span.goods__center--item-price-img
+            span {{/each}}
+            ul.goods__center-nav
+                li.goods__center-nav--item 1
+                li.goods__center-nav--item 2
+                li.goods__center-nav--item.active 3
+                li.goods__center-nav--item 4
+                li.goods__center-nav--item 5
+                li.goods__center-nav--item 6
+                li.goods__center-nav--item 7
+            div.goods__center-text
+                p.goods__center-text--item Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                p.goods__center-text--item Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

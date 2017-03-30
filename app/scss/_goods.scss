@@ -62,6 +62,7 @@
         margin-bottom: 9px;
         position: relative;
         cursor: pointer;
+        font-size: 14px;
 
         &:hover {
           text-decoration: underline;
@@ -92,7 +93,7 @@
   &__center {
     display: inline-block;
     vertical-align: top;
-    width: 79%;
+    width: 78%;
     text-align: right;
 
 
@@ -104,7 +105,7 @@
       padding-top: 15px;
       margin-bottom: 21px;
       max-width: 242px;
-      margin-right: 23px;
+      margin-right: 15px;
 
       &:nth-child(3n + 1) {
         margin-right:0;
@@ -180,7 +181,7 @@
       padding-top: 40px;
       &--item {
         display: inline-block;
-        width: 48%;
+        width: 47%;
         color: #767676;
         line-height: 21px;
         &:first-child {

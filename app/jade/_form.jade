@@ -1,0 +1,13 @@
+div.form-block
+    form#feedback.form-block__main-form
+        h2.form-block__main-form--title FeedBack
+        i.form-block__main-form--close
+        label(for='name') Name <span>*</span>
+        input(type='text' name='name' id='name' title='Только английские буквы' required minlength='4' pattern='^[a-zA-Z]+$')
+        label(for='phone') Phone <span>*</span>
+        input(type='tel' name='phone' id='phone' minlength='10' class='phone' required title='Только цифры. Минимум 10 цифр')
+        label(for='email') Email <span>*</span>
+        input(type='email' name='email' id='email' required)
+        label(for='text') Text
+        textarea(type='email' name='text' id='text')
+        input(type='submit' value='Submit' id='submit')
