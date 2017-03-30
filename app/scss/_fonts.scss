@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+
+$font-size: 14px;
+$font-family: 'Arimo', sans-serif;
+
+html, body {
+  font-size: $font-size;
+  font-family: $font-family;
+}

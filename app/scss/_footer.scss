@@ -1,0 +1,40 @@
+.footer {
+  border-top: 1px solid #eaeaea ;
+  width:100%;
+  padding-top: 50px;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+
+  &__wrap {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__coop {
+    display: inline-block;
+    &--item {
+      color: #767676;
+      line-height: 21px;
+    }
+  }
+
+  &__menu {
+    display: inline-block;
+    float: right;
+
+    &-item {
+      display: inline-block;
+      margin-right: 65px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--link {
+        text-transform: uppercase;
+        color: #4c5059;
+        cursor: pointer;
+      }
+    }
+  }
+}

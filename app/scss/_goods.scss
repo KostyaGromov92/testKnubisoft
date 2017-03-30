@@ -1,0 +1,192 @@
+.goods {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+
+  &__bread-crums {
+    margin-bottom: 40px;
+    &--item {
+      display: inline-block;
+      color: #282c37;
+      margin-right: 32px;
+      position: relative;
+
+      &:last-child {
+        color: #767676;
+        &:after {
+          display: none;
+        }
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 7px;
+        background-image: url(../img/rectangle.png);
+        top: 50%;
+        transform: translateY(-50%);
+        right: -18px;
+      }
+    }
+  }
+
+  &__left {
+    display: inline-block;
+    width: 21%;
+
+    &--item {
+      color: #767676;
+      margin-bottom: 18px;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        color: #282c37;
+      }
+    }
+
+    &--item.active {
+      color: #282c37;
+    }
+
+    &-list {
+      padding-left: 20px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+      margin-top: 18px;
+      &--item {
+        color: #767676;
+        margin-bottom: 9px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+          color: #010101;
+        }
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #767676;
+          border-radius: 50%;
+          left: -8px;
+        }
+      }
+
+      &--item.active {
+        text-decoration: underline;
+        color: #010101;
+      }
+    }
+  }
+
+  &__center {
+    display: inline-block;
+    vertical-align: top;
+    width: 79%;
+    text-align: right;
+
+
+    &--item {
+      display: inline-block;
+      width: 33%;
+      border: 1px solid #e4e4e4;
+      box-sizing: border-box;
+      padding-top: 15px;
+      margin-bottom: 21px;
+      max-width: 242px;
+      margin-right: 23px;
+
+      &:nth-child(3n + 1) {
+        margin-right:0;
+      }
+
+      &-img {
+        display: block;
+        margin: 0 auto;
+        background-image: url(../img/microware.png);
+        background-position: center;
+        max-width: 210px;
+        height: 210px;
+        background-size: cover;
+        margin: 0 auto;
+      }
+
+      &-text {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #767676;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 22px;
+        padding: 0 15px;
+      }
+
+      &-price {
+        height: 55px;
+        line-height: 55px;
+        position: relative;
+        border-top: 1px solid #e4e4e4;
+        padding: 0 15px;
+        text-align: initial;
+        &-digit {
+          font-size: 28px;
+          font-weight: bold;
+          color: #444444;
+        }
+
+        &-img {
+          background-image: url(../img/goods-sale.png);
+          width: 28px;
+          height: 21px;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 15px;
+        }
+      }
+    }
+
+    &-nav {
+      text-align: center;
+      margin-top: 20px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #777777;
+      &--item {
+        display: inline-block;
+        color: #888888;
+        margin-right: 20px;
+      }
+
+      &--item.active {
+        font-size: 16px;
+        color: #444444;
+        font-weight: bold;
+      }
+    }
+
+    &-text {
+      text-align: left;
+      padding-top: 40px;
+      &--item {
+        display: inline-block;
+        width: 48%;
+        color: #767676;
+        line-height: 21px;
+        &:first-child {
+          margin-right: 4%;
+        }
+      }
+    }
+  }
+}
